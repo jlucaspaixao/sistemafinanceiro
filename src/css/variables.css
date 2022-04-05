@@ -1,0 +1,9 @@
+:root {
+    --color-primary: #484848;
+    --color-secondary: #F9F9F9;
+    --color-blue: #6B6BEB;
+    --color-yellow: #D1BD06;
+    --color-gray: #808080;
+
+    --transition: all .3s ease;
+}

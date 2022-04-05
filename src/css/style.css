@@ -1,0 +1,293 @@
+/* HEADER */
+header {
+    background-color: var(--color-primary);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container .logo {
+    padding: 10px 0;
+    width: 100px;
+    height: auto;
+}
+
+header .container .menu {
+    display: flex;
+    gap: 20px;
+    min-height: 100%;
+}
+
+header .container .menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: var(--color-secondary);
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 15px;
+}
+
+header .container .menu a:hover {
+    background-color: var(--color-blue);
+}
+/* BREADCRUMBS */
+.breadcrumb {
+    border-radius: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.breadcrumb .breadcrumb-item, .breadcrumb .breadcrumb-item a {
+    color: var(--color-blue);
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.breadcrumb .breadcrumb-item:not(:first-child):before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    content: "\f178";
+    font: var(--fa-font-solid);
+    color: var(--color-blue);
+}
+
+.breadcrumb .breadcrumb-item a:hover {
+    color: var(--color-yellow);
+}
+
+/* PUBLICIDADE */
+.publi {
+    width: 100%;
+    height: 150px;
+    background-color: var(--color-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.publi-two {
+    height: 300px;
+}
+
+.publi .text-publi {
+    font-size: 40px;
+    color: var(--color-secondary);
+}
+
+/* ABOUT */
+.about .content .title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: var(--color-blue);
+}
+
+.about .content p {
+    font-size: 16px;
+    color: var(--color-primary);
+}
+
+/* GRID */
+.grid .content {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+
+.grid .content .img {
+    width: 85px;
+    height: 85px;
+    background-color: var(--color-gray);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-secondary);
+    transition: var(--transition);
+}
+
+.grid .content:hover .img {
+    border-radius: 0;
+}
+
+.grid .content .img img {
+    width: 100%;
+    height: 100%;
+    padding: 15%;
+    object-fit: fit-content;
+    object-fit: -moz-fit-content;
+}
+
+.grid .content .text {
+    font-size: 18px;
+    transition: var(--transition);
+}
+
+.grid .content:hover .text {
+    color: var(--color-blue);
+}
+
+/* LIST */
+.list .title {
+    text-align: center;
+    border-bottom: 1px dashed var(--color-blue);
+    padding-bottom: 10px;
+    font-size: 26px;
+    color: var(--color-blue);
+    margin: 0;
+}
+
+.list .grid .content {
+    margin: 0;
+    padding: 10px;
+    border-right: 1px dashed var(--color-blue);
+    border-bottom: 1px dashed var(--color-blue);
+}
+
+.list .grid .content:nth-child(6n+6) {
+    border-right: none;
+}
+
+.list .grid .content .img {
+    width: 50px;
+    height: 50px;
+}
+
+.list .grid .content .text {
+    font-size: 14px;
+}
+
+/* FIND STATE */
+.find-state .form-control {
+    border-radius: 0;
+    height: 40px !important;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    font-size: 14px;
+    color: var(--color-secondary);
+    box-shadow: none;
+}
+
+.find-state .form-control::-webkit-scrollbar {
+    width: 10px;
+}
+
+.find-state .form-control::-webkit-scrollbar-track {
+    background: var(--color-primary);
+}
+
+.find-state .form-control::-webkit-scrollbar-thumb {
+    background-color: var(--color-secondary);
+    border: 2px solid var(--color-primary)
+}
+
+/* FAQ */
+#faq .card {
+    border-radius: 0;
+    margin-bottom: 10px;
+    border: none;
+}
+
+#faq .card .card-header {
+    padding: 0;
+    border: none;
+}
+
+#faq .card .card-header .btnfaq {
+    width: 100%;
+    border-radius: 0;
+    text-align: left;
+    font-size: 14px;
+    color: var(--color-secondary);
+    background-color: var(--color-blue);
+    box-shadow: none;
+    padding: 5px 10px;
+}
+
+#faq .card .card-header .btnfaq.collapsed {
+    background-color: var(--color-primary);
+}
+
+#faq .card .collapse, 
+#faq .card .collapsing {
+    background-color: var(--color-blue);
+    font-size: 14px;
+    color: var(--color-secondary);
+    padding: 30px 10px 10px;
+}
+
+#faq .card .collapse .card-body {
+    padding: 0;
+}
+
+/* CITIES */
+.cities .controller {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cities .controller .btn-primary {
+    box-shadow: none;
+    border-radius: 50%;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+}
+
+.cities .controller .btn-primary:hover {
+    background-color: var(--color-blue);
+    border-color: var(--color-blue);
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container .logo {
+    padding: 10px 0;
+    width: 100px;
+    height: auto;
+}
+
+footer .container .copyright {
+    margin: 0 auto 0 25px;
+    display: flex;
+    align-items: center;
+}
+
+footer .container .credits {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+footer .container .credits a {
+    text-decoration: none;
+    color: var(--color-secondary);
+    transition: var(--transition);
+}
+
+footer .container .credits a:hover {
+    color: var(--color-yellow);
+}
